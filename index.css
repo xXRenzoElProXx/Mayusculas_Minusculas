@@ -1,0 +1,141 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e3a8a, #6d28d9);
+    color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    color: #333;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 150px;
+    margin-bottom: 20px;
+    padding: 12px;
+    font-size: 16px;
+    line-height: 1.6;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+    resize: vertical;
+}
+
+textarea:focus {
+    border-color: #1e3a8a;
+    outline: none;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    background: linear-gradient(135deg, #1e3a8a, #6d28d9);
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+button.enabled {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.buttonModify:hover {
+    background: linear-gradient(135deg, #1e3a8a, #4b2d77);
+}
+
+.button-clear {
+    background: #f87171;
+    color: #fff;
+    font-size: 18px;
+}
+
+.button-clear:hover {
+    background: rgb(179, 3, 3);
+}
+
+.button-clear::before {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.description {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #444;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.description h2 {
+    font-size: 20px;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+.description ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.description li {
+    margin-bottom: 10px;
+}
+
+hr {
+    border: 0;
+    border-top: 2px solid #1e3a8a;
+    margin: 20px 0;
+}
+
+@media (max-width: 600px) {
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    textarea {
+        font-size: 14px;
+    }
+}

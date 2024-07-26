@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Texto</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Conversor de Texto</h1>
+        <p>Convierte tu texto entre mayúsculas y minúsculas fácilmente. Solo ingresa el texto en el área designada y
+            selecciona la opción que prefieras para modificarlo en segundos.</p>
+        <textarea id="textInput" placeholder="Escribe o pega tu texto aquí..."
+            oninput="updateButtonStates()"></textarea>
+
+        <div class="button-container">
+            <button class="buttonModify" id="capitalizeBtn" onclick="convertText('capitalize')">Capitalizar
+                Texto</button>
+            <button class="buttonModify" id="toLowerCaseBtn" onclick="convertText('toLowerCase')">A Todo
+                Minúsculas</button>
+            <button class="buttonModify" id="toUpperCaseBtn" onclick="convertText('toUpperCase')">A Todo
+                Mayúsculas</button>
+            <button class="buttonModify" id="sentenceCaseBtn" onclick="convertText('sentenceCase')">Mayúsculas Después
+                de Punto</button>
+            <button class="buttonModify" id="invertTextBtn" onclick="convertText('invertText')">Invertir Texto</button>
+            <button class="buttonModify" id="removeExtraSpacesBtn" onclick="convertText('removeExtraSpaces')">Eliminar
+                Espacios
+                Extra</button>
+            <button class="buttonModify" id="countWordsBtn" onclick="convertText('countWords')">Contar Palabras</button>
+            <button class="buttonModify" id="countCharsBtn" onclick="convertText('countChars')">Contar
+                Caracteres</button>
+            <button class="buttonModify" id="countCharsNoSpacesBtn" onclick="convertText('countCharsNoSpaces')">Contar
+                Caracteres Sin
+                Espacios</button>
+            <button class="buttonModify" id="countCharsNoPunctuationBtn"
+                onclick="convertText('countCharsNoPunctuation')">Contar Caracteres Ignorando Puntuación</button>
+            <button id="clearBtn" class="button-clear" onclick="convertText('clear')">Limpiar</button>
+        </div>
+
+        <p id="result"></p>
+
+        <hr>
+
+        <div class="description">
+            <h2>Descripción del Sitio</h2>
+            <ul>
+                <li><strong>Mayúsculas después de punto:</strong> Convierte a mayúsculas justo después de cada punto o
+                    al comienzo del párrafo.</li>
+                <li><strong>Todo minúsculas:</strong> Convierte todos los caracteres del texto a minúsculas.</li>
+                <li><strong>Todo MAYÚSCULAS:</strong> Convierte todos los caracteres del texto a mayúsculas.</li>
+                <li><strong>Capitalizar texto:</strong> Convierte la primera letra de cada palabra a mayúscula.</li>
+                <li><strong>Invertir Texto:</strong> Invierte el orden de los caracteres del texto.</li>
+                <li><strong>Eliminar Espacios Extra:</strong> Elimina espacios en blanco adicionales y deja solo un
+                    espacio entre palabras.</li>
+                <li><strong>Reemplazar Comas con Puntos:</strong> Reemplaza todas las comas en el texto por puntos.</li>
+                <li><strong>Contar Palabras:</strong> Muestra el número de palabras en el texto.</li>
+                <li><strong>Contar Caracteres:</strong> Muestra el número total de caracteres en el texto.</li>
+                <li><strong>Contar Caracteres Sin Espacios:</strong> Muestra el número de caracteres en el texto sin
+                    contar los espacios.</li>
+                <li><strong>Contar Caracteres Ignorando Puntuación:</strong> Muestra el número de caracteres en el texto
+                    ignorando la puntuación.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
