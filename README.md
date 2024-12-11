@@ -43,7 +43,7 @@ git clone https://github.com/xXRenzoElProXx/Mayusculas_Minusculas.git
 ```bash
 cd mayusculas_minusculas
 ```
-3. Abre el archivo index.html en tu navegador para visualizar la aplicación.
+### 3. Abre el archivo index.html en tu navegador para visualizar la aplicación.
 
 ## 🧑‍💻 Uso de la aplicación
 * **Convertir a mayúsculas:** Haz clic en el botón para convertir todo el texto en mayúsculas.
