@@ -37,4 +37,30 @@ Este proyecto es una **aplicación de conversión de texto** interactiva que per
 ## 🚀 Instalación y uso
 ### 1. Clona el repositorio a tu máquina local:
 ```bash
-git clone https://github.com/tuusuario/conversor-de-texto.git
+git clone https://github.com/xXRenzoElProXx/Mayusculas_Minusculas.git
+```
+### 2. Navega a la carpeta del proyecto:
+```bash
+cd mayusculas_minusculas
+```
+3. Abre el archivo index.html en tu navegador para visualizar la aplicación.
+
+## 🧑‍💻 Uso de la aplicación
+* **Convertir a mayúsculas:** Haz clic en el botón para convertir todo el texto en mayúsculas.
+* **Convertir a minúsculas:** Haz clic en el botón para convertir todo el texto en minúsculas.
+* **Capitalizar:** Convierte la primera letra de cada palabra a mayúscula.
+* **Invertir texto:** Invierte el orden de los caracteres.
+* **Eliminar espacios extra:** Elimina espacios innecesarios en el texto.
+* **Contar palabras:** Muestra el número total de palabras.
+* **Contar caracteres:** Muestra el número total de caracteres.
+* **Contar caracteres sin espacios:** Excluye espacios al contar caracteres.
+* **Contar caracteres sin puntuación:** Excluye signos de puntuación al contar caracteres.
+
+## 📂 Estructura de archivos
+```bash
+mayusculas_minusculas/
+├── index.html        # Archivo principal de la aplicación.
+├── styles.css        # Hoja de estilos de la aplicación.
+├── script.js         # Archivo JavaScript con la lógica de la aplicación.
+├── screenshot.jpeg   # Captura de pantalla de la aplicación.
+```
